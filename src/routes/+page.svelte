@@ -12,11 +12,11 @@
 	const XIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 18 18"/></svg>`;
 
 	let faqs = [
-		{ question: "What does a Holo membership include?", open: false },
-		{ question: "Is Holo for you?", open: false },
-		{ question: "What more does Holo offer than my regular doctor or insurance?", open: false },
-		{ question: "I recently got tested. Should I wait to join Holo?", open: false },
-		{ question: "Which biomarkers are included in the Holo membership?", open: false }
+		{ question: "What is SCA certification and why does it matter?", open: false },
+		{ question: "Do I need prior coffee experience to enroll?", open: false },
+		{ question: "How long does it take to complete a certification course?", open: false },
+		{ question: "Will I be ready to compete after completing the courses?", open: false },
+		{ question: "What equipment do I need for the training?", open: false }
 	];
 
 	function toggleFaq(index: number) {
@@ -30,42 +30,77 @@
 <div class="min-h-screen flex flex-col font-sans text-gray-900 bg-[#FAFAFA]">
 	<!-- Top Banner -->
 	<div class="bg-black text-white text-[11px] font-medium py-3 text-center tracking-wide px-4">
-		15% off for yourself or for someone you care about with the code GIFT15 until December 31.
+		Early bird discount: Save 20% on Foundation courses starting this month. Limited spots available.
 	</div>
 
 	<!-- Navigation -->
 	<nav class="flex items-center justify-between px-6 md:px-12 py-5 bg-[#FAFAFA]">
 		<div class="flex items-center gap-2">
 			<!-- Logo -->
-			<div class="flex items-center gap-2">
-				<div class="grid grid-cols-2 gap-[2px]">
-					<div class="w-1 h-1 bg-black rounded-full"></div>
-					<div class="w-1 h-1 bg-black rounded-full"></div>
-					<div class="w-1 h-1 bg-black rounded-full"></div>
-					<div class="w-1 h-1 bg-black rounded-full"></div>
+			<div class="flex items-center gap-3">
+				<div class="w-8 h-8 text-primary-600">
+					<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask
+							id="mask0_161_7365"
+							style="mask-type:luminance"
+							maskUnits="userSpaceOnUse"
+							x="3"
+							y="1"
+							width="18"
+							height="22"
+						>
+							<path d="M3 1H20.7794V22.3353H3V1Z" fill="white" />
+						</mask>
+						<g mask="url(#mask0_161_7365)">
+							<path
+								d="M14.1516 3.24638L12.4034 2.77795L10.9302 8.27606L9.60014 3.31233L7.85194 3.78076L9.28896 9.14369L5.70969 5.56443L4.42993 6.84419L8.35594 10.7702L3.46671 9.46017L2.99829 11.2083L8.34038 12.6397C8.27922 12.3759 8.24687 12.1011 8.24687 11.8187C8.24687 9.81953 9.86746 8.19894 11.8666 8.19894C13.8657 8.19894 15.4863 9.81953 15.4863 11.8187C15.4863 12.0993 15.4544 12.3724 15.394 12.6347L20.2489 13.9356L20.7173 12.1874L15.354 10.7503L20.2436 9.44012L19.7751 7.69196L14.412 9.12898L17.9913 5.54972L16.7115 4.26998L12.84 8.14156L14.1516 3.24638Z"
+								fill="currentColor"
+							/>
+							<path
+								d="M15.3888 12.655C15.2389 13.2887 14.9225 13.8579 14.4883 14.314L18.0056 17.8313L19.2853 16.5515L15.3888 12.655Z"
+								fill="currentColor"
+							/>
+							<path
+								d="M14.4529 14.3508C14.0135 14.7996 13.4582 15.1345 12.8354 15.3071L14.1153 20.0836L15.8635 19.6151L14.4529 14.3508Z"
+								fill="currentColor"
+							/>
+							<path
+								d="M12.7701 15.3246C12.4812 15.3989 12.1784 15.4384 11.8663 15.4384C11.5319 15.4384 11.2082 15.393 10.9008 15.3082L9.61981 20.089L11.368 20.5574L12.7701 15.3246Z"
+								fill="currentColor"
+							/>
+							<path
+								d="M10.839 15.2905C10.2258 15.1093 9.68038 14.7702 9.24994 14.3201L5.72406 17.8459L7.00382 19.1257L10.839 15.2905Z"
+								fill="currentColor"
+							/>
+							<path
+								d="M9.22084 14.2889C8.79778 13.836 8.48962 13.2743 8.34294 12.6505L3.47211 13.9556L3.94053 15.7038L9.22084 14.2889Z"
+								fill="currentColor"
+							/>
+						</g>
+					</svg>
 				</div>
-				<span class="text-xl font-bold tracking-tight">HOLO</span>
+				<span class="text-xl font-bold tracking-tight">Coffee Academy</span>
 			</div>
 		</div>
 		<div class="hidden md:flex items-center gap-8 text-[13px] font-medium text-gray-600">
-			<a href="#" class="hover:text-black transition-colors">Biomarkers</a>
+			<a href="#" class="hover:text-black transition-colors">Courses</a>
+			<a href="#" class="hover:text-black transition-colors">About</a>
 			<a href="#" class="hover:text-black transition-colors">FAQ</a>
-			<a href="#" class="hover:text-black transition-colors">Blog</a>
-			<a href="#" class="hover:text-black transition-colors">Gift Holo</a>
-			<a href="#" class="bg-black text-white px-5 py-2 rounded text-[13px] font-medium hover:bg-gray-800 transition-colors">Join now</a>
+			<a href="#" class="hover:text-black transition-colors">Contact</a>
+			<a href="#" class="bg-black text-white px-5 py-2 rounded text-[13px] font-medium hover:bg-gray-800 transition-colors">Enroll now</a>
 		</div>
 	</nav>
 
 	<!-- Hero Section -->
 	<section class="flex flex-col items-center pt-16 pb-20 px-4 text-center">
 		<h1 class="text-4xl md:text-[56px] leading-[1.1] font-medium tracking-tight max-w-3xl mb-6">
-			Your companion<br>for lifelong vitality.
+			Master the art of coffee.<br>Earn your certification.
 		</h1>
 		<p class="text-gray-500 text-[15px] max-w-xl mb-8 leading-relaxed">
-			Test 60+ biomarkers every year, track all your health in a single place, and get insights from top doctors. All starting at just €199.
+			Professional barista certification through SCA-aligned courses. From home brewing fundamentals to competition-level technique mastery. Start your coffee journey today.
 		</p>
 		<button class="bg-black text-white px-6 py-3 rounded text-[13px] font-medium hover:bg-gray-800 transition-colors mb-20">
-			Start testing
+			Explore courses
 		</button>
 
 		<!-- Horizontal Scroll Images -->
@@ -73,65 +108,66 @@
 			<div class="flex gap-6 justify-center items-center h-[320px]">
 				<!-- Image 1 -->
 				<div class="w-[200px] h-[260px] rounded-[24px] overflow-hidden flex-shrink-0 relative group shadow-lg rotate-[-2deg] translate-y-4">
-					<img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?w=400&h=600&fit=crop" alt="Climbing" class="w-full h-full object-cover" />
+					<img src="/generated/image-professional-barista-practicing-latte-ar-1765945095853-0.webp" alt="Barista practicing latte art" class="w-full h-full object-cover" />
 				</div>
 				<!-- Image 2 -->
 				<div class="w-[260px] h-[180px] rounded-[24px] overflow-hidden flex-shrink-0 relative group shadow-lg rotate-[1deg] -translate-y-2">
-					<img src="https://images.unsplash.com/photo-1502086223501-681a5812147d?w=400&h=300&fit=crop" alt="Bench" class="w-full h-full object-cover" />
+					<img src="/generated/image-coffee-beans-being-poured-into-grinder-h-1765945112938-5.webp" alt="Coffee beans" class="w-full h-full object-cover" />
 				</div>
 				<!-- Image 3 -->
 				<div class="w-[220px] h-[220px] rounded-[24px] overflow-hidden flex-shrink-0 relative group shadow-lg rotate-[-1deg] translate-y-2">
-					<img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=400&fit=crop" alt="Hiking" class="w-full h-full object-cover" />
+					<img src="/generated/image-barista-student-learning-espresso-extrac-1765945103594-2.webp" alt="Barista training" class="w-full h-full object-cover" />
 				</div>
 				<!-- Image 4 -->
 				<div class="w-[200px] h-[200px] rounded-[24px] overflow-hidden flex-shrink-0 relative group shadow-lg rotate-[2deg] -translate-y-4">
-					<img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=400&h=400&fit=crop" alt="Running" class="w-full h-full object-cover" />
+					<img src="/generated/image-hands-holding-a-perfectly-crafted-cappuc-1765945100640-1.webp" alt="Latte art" class="w-full h-full object-cover" />
 				</div>
 				<!-- Image 5 -->
 				<div class="w-[180px] h-[260px] rounded-[24px] overflow-hidden flex-shrink-0 relative group shadow-lg rotate-[-2deg] translate-y-6">
-					<img src="https://images.unsplash.com/photo-1551524164-687a55dd1126?w=400&h=600&fit=crop" alt="Snow" class="w-full h-full object-cover" />
+					<img src="/generated/image-barista-operating-professional-espresso--1765945109785-4.webp" alt="Espresso machine" class="w-full h-full object-cover" />
 				</div>
 				<!-- Image 6 -->
 				<div class="w-[200px] h-[160px] rounded-[24px] overflow-hidden flex-shrink-0 relative group shadow-lg rotate-[1deg] -translate-y-2">
-					<img src="https://images.unsplash.com/photo-1596328616956-619f70d748d6?w=400&h=300&fit=crop" alt="Park" class="w-full h-full object-cover" />
+					<img src="/generated/image-coffee-cupping-session-with-multiple-cup-1765945106713-3.webp" alt="Coffee cupping" class="w-full h-full object-cover" />
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- App Showcase -->
+	<!-- Curriculum Showcase -->
 	<section class="py-24 px-6 md:px-12 flex justify-center">
 		<div class="bg-white rounded-[32px] p-12 md:p-20 flex flex-col md:flex-row items-center gap-16 max-w-[1200px] w-full shadow-sm">
-			<!-- Phone Mockup -->
-			<div class="relative w-[280px] h-[580px] bg-black rounded-[40px] p-3 shadow-2xl flex-shrink-0 border-4 border-gray-100">
-				<div class="w-full h-full bg-white rounded-[32px] overflow-hidden relative">
-					<!-- Fake App UI -->
-					<div class="p-6 pt-10">
-						<div class="flex justify-between items-center mb-6">
-							<div class="text-xs font-bold">Good morning, Sarah</div>
-							<div class="w-6 h-6 bg-gray-200 rounded-full"></div>
+			<!-- Curriculum Visual -->
+			<div class="relative w-[320px] h-[420px] bg-gradient-to-br from-primary-50 to-primary-100 rounded-[32px] p-8 shadow-xl flex-shrink-0">
+				<div class="text-sm font-bold text-primary-900 mb-6">SCA-Aligned Curriculum</div>
+				<div class="space-y-4">
+					<div class="bg-white rounded-xl p-4 shadow-sm">
+						<div class="flex items-center gap-3 mb-2">
+							<div class="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center text-white text-xs font-bold">1</div>
+							<div class="text-sm font-medium">Coffee Fundamentals</div>
 						</div>
-						<div class="flex justify-between gap-2 mb-8">
-							<div class="w-16 h-16 rounded-full border-4 border-red-400 flex items-center justify-center text-xs font-bold">25</div>
-							<div class="w-16 h-16 rounded-full border-4 border-green-400 flex items-center justify-center text-xs font-bold">53</div>
-							<div class="w-16 h-16 rounded-full border-4 border-blue-400 flex items-center justify-center text-xs font-bold">66</div>
-						</div>
-						<div class="bg-gray-50 p-4 rounded-xl mb-4">
-							<div class="text-[10px] text-gray-500 uppercase mb-1">Biological Age</div>
-							<div class="text-2xl font-bold">30 <span class="text-sm font-normal text-gray-500">years</span></div>
-						</div>
-						<div class="space-y-3">
-							<div class="h-2 bg-gray-100 rounded full w-3/4"></div>
-							<div class="h-2 bg-gray-100 rounded full w-1/2"></div>
-							<div class="h-2 bg-gray-100 rounded full w-5/6"></div>
-						</div>
+						<div class="text-xs text-gray-500 ml-11">Origin, processing, roasting basics</div>
 					</div>
-					<!-- Bottom Nav -->
-					<div class="absolute bottom-0 left-0 w-full h-16 bg-white border-t border-gray-100 flex justify-around items-center px-4">
-						<div class="w-6 h-6 bg-black rounded-full"></div>
-						<div class="w-6 h-6 bg-gray-200 rounded-full"></div>
-						<div class="w-6 h-6 bg-gray-200 rounded-full"></div>
-						<div class="w-6 h-6 bg-gray-200 rounded-full"></div>
+					<div class="bg-white rounded-xl p-4 shadow-sm">
+						<div class="flex items-center gap-3 mb-2">
+							<div class="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center text-white text-xs font-bold">2</div>
+							<div class="text-sm font-medium">Espresso Mastery</div>
+						</div>
+						<div class="text-xs text-gray-500 ml-11">Extraction, dialing in, consistency</div>
+					</div>
+					<div class="bg-white rounded-xl p-4 shadow-sm">
+						<div class="flex items-center gap-3 mb-2">
+							<div class="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center text-white text-xs font-bold">3</div>
+							<div class="text-sm font-medium">Milk Techniques</div>
+						</div>
+						<div class="text-xs text-gray-500 ml-11">Steaming, texturing, latte art</div>
+					</div>
+					<div class="bg-white rounded-xl p-4 shadow-sm">
+						<div class="flex items-center gap-3 mb-2">
+							<div class="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center text-white text-xs font-bold">4</div>
+							<div class="text-sm font-medium">Brewing Methods</div>
+						</div>
+						<div class="text-xs text-gray-500 ml-11">Pour over, immersion, cold brew</div>
 					</div>
 				</div>
 			</div>
@@ -139,24 +175,25 @@
 			<!-- Content -->
 			<div class="flex-1 max-w-lg">
 				<h2 class="text-3xl font-medium mb-6 leading-tight">
-					Your health at a glance.<br>
-					See your daily Strain, Recovery and Sleep goals.
-					Explore your biomarkers, understand what
-					they mean, and access your Clinician Notes,
-					including your Action Plan created after your test.
+					Structured learning paths designed for real-world success.
 				</h2>
-				<div class="flex items-center justify-between mt-12">
-					<a href="#" class="flex items-center gap-2 text-blue-600 text-sm font-medium hover:underline">
-						{@html PlayCircle}
-						Watch video
-					</a>
-					<div class="flex gap-4">
-						<button class="w-8 h-8 flex items-center justify-center rounded-full border border-gray-200 hover:bg-gray-50 transition-colors">
-							{@html ChevronLeft}
-						</button>
-						<button class="w-8 h-8 flex items-center justify-center rounded-full border border-gray-200 hover:bg-gray-50 transition-colors">
-							{@html ChevronRight}
-						</button>
+				<p class="text-gray-500 text-[15px] leading-relaxed mb-6">
+					Our curriculum follows Specialty Coffee Association standards, ensuring you learn the techniques and knowledge that matter most in today's coffee industry. From foundational skills to advanced competition techniques, every module builds your expertise systematically.
+				</p>
+				<div class="flex items-center gap-6 mt-8">
+					<div class="text-center">
+						<div class="text-3xl font-bold text-primary-600 mb-1">500+</div>
+						<div class="text-xs text-gray-500">Certified Students</div>
+					</div>
+					<div class="w-px h-12 bg-gray-200"></div>
+					<div class="text-center">
+						<div class="text-3xl font-bold text-primary-600 mb-1">95%</div>
+						<div class="text-xs text-gray-500">Pass Rate</div>
+					</div>
+					<div class="w-px h-12 bg-gray-200"></div>
+					<div class="text-center">
+						<div class="text-3xl font-bold text-primary-600 mb-1">12+</div>
+						<div class="text-xs text-gray-500">Years Experience</div>
 					</div>
 				</div>
 			</div>
@@ -167,36 +204,36 @@
 	<section class="py-20 px-6 md:px-12 max-w-[1400px] mx-auto w-full">
 		<div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-10">
 			<h2 class="text-4xl md:text-5xl font-medium tracking-tight max-w-md leading-[1.1]">
-				You deserve to live fully, longer, and better.
+				Transform your passion into professional expertise.
 			</h2>
 			<p class="text-gray-500 text-[15px] max-w-md leading-relaxed">
-				Your health is more than numbers, it's your story, your future. Taking care of it today means giving yourself the chance to enjoy more years with strength, clarity, and vitality. We're here to help you protect what truly matters: a healthier, longer life.
+				Whether you're starting your coffee journey or aiming for competition success, our training programs provide the skills, confidence, and certification you need to thrive in the specialty coffee industry.
 			</p>
 		</div>
 
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 			<!-- Card 1 -->
 			<div class="relative h-[480px] rounded-[32px] overflow-hidden group">
-				<img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=800&fit=crop" alt="Woman smiling" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+				<img src="/generated/image-confident-barista-behind-espresso-bar-we-1765945115980-6.webp" alt="Professional barista" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
 				<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8 text-white">
-					<h3 class="text-2xl font-medium mb-2">All your data. One place.</h3>
-					<p class="text-sm text-white/80 leading-relaxed">Holo takes into account your lifestyle and habits, your past results, and connects your wearables data.</p>
+					<h3 class="text-2xl font-medium mb-2">Launch your career.</h3>
+					<p class="text-sm text-white/80 leading-relaxed">Gain the certification and skills that coffee shops actively seek in their baristas.</p>
 				</div>
 			</div>
 			<!-- Card 2 -->
 			<div class="relative h-[480px] rounded-[32px] overflow-hidden group">
-				<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&h=800&fit=crop" alt="Man running" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+				<img src="/generated/image-group-of-diverse-students-in-coffee-trai-1765945119094-7.webp" alt="Coffee training class" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
 				<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8 text-white">
-					<h3 class="text-2xl font-medium mb-2">Better control over your performance.</h3>
-					<p class="text-sm text-white/80 leading-relaxed">Start thriving by tracking your daily strain, recovery and sleep.</p>
+					<h3 class="text-2xl font-medium mb-2">Learn from the best.</h3>
+					<p class="text-sm text-white/80 leading-relaxed">Train with experienced professionals who are passionate about sharing their expertise.</p>
 				</div>
 			</div>
 			<!-- Card 3 -->
 			<div class="relative h-[480px] rounded-[32px] overflow-hidden group">
-				<img src="https://images.unsplash.com/photo-1529113247322-132d7844a497?w=600&h=800&fit=crop" alt="Family" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+				<img src="/generated/image-barista-competition-participant-performi-1765945122298-8.webp" alt="Barista competition" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
 				<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8 text-white">
-					<h3 class="text-2xl font-medium mb-2">Proactive care.</h3>
-					<p class="text-sm text-white/80 leading-relaxed">Health is not only the absence of illness but having strength and vitality everyday.</p>
+					<h3 class="text-2xl font-medium mb-2">Compete with confidence.</h3>
+					<p class="text-sm text-white/80 leading-relaxed">Prepare for regional and international coffee competitions with advanced training.</p>
 				</div>
 			</div>
 		</div>
@@ -206,13 +243,13 @@
 	<section class="py-24 px-6 text-center bg-[#F5F5F3]">
 		<div class="max-w-3xl mx-auto">
 			<blockquote class="text-2xl md:text-3xl font-medium leading-tight mb-10">
-				"I've always wanted a tool like Holo. It gives people real power over their health in a way that's simple and intuitive. I love how deeply personalized it is, making it easier than ever to understand your body and make smart choices"
+				"This academy transformed my coffee knowledge from casual enthusiasm to professional expertise. The hands-on training and SCA-aligned curriculum gave me the confidence to not only work as a barista but to compete at a national level."
 			</blockquote>
 			<div class="flex flex-col items-center gap-3">
-				<img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop" alt="Doctor" class="w-12 h-12 rounded-full object-cover" />
+				<img src="/generated/image-experienced-coffee-professional-teaching-1765945125467-9.webp" alt="Coffee professional" class="w-12 h-12 rounded-full object-cover" />
 				<div class="text-sm">
-					<div class="font-bold">Dra. Cocco Meradi</div>
-					<div class="text-gray-500">Functional Doctor</div>
+					<div class="font-bold">Pim Rattanakorn</div>
+					<div class="text-gray-500">2023 Thailand Barista Champion</div>
 				</div>
 			</div>
 		</div>
@@ -222,16 +259,16 @@
 	<section class="py-20 px-6 md:px-12 max-w-[1400px] mx-auto w-full border-b border-gray-200">
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
 			<div>
-				<h3 class="text-xl font-medium mb-2">15 minutes lab visit.</h3>
-				<p class="text-sm text-gray-500 leading-relaxed">In and out. Take your blood and urine test. One minute with the nurse. Quick and simple.</p>
+				<h3 class="text-xl font-medium mb-2">Small class sizes.</h3>
+				<p class="text-sm text-gray-500 leading-relaxed">Maximum 8 students per class ensures personalized attention and hands-on practice time.</p>
 			</div>
 			<div>
-				<h3 class="text-xl font-medium mb-2">24 hours first results.</h3>
-				<p class="text-sm text-gray-500 leading-relaxed">Your lab test data, fast. Complete results in five business days.</p>
+				<h3 class="text-xl font-medium mb-2">Professional equipment.</h3>
+				<p class="text-sm text-gray-500 leading-relaxed">Train on industry-standard espresso machines, grinders, and brewing equipment.</p>
 			</div>
 			<div>
-				<h3 class="text-xl font-medium mb-2">Clinician Notes in 1 week.</h3>
-				<p class="text-sm text-gray-500 leading-relaxed">From data to a clear Action Plan to guide you along your health path.</p>
+				<h3 class="text-xl font-medium mb-2">Completion guarantee.</h3>
+				<p class="text-sm text-gray-500 leading-relaxed">We support you until you pass your certification with confidence.</p>
 			</div>
 		</div>
 	</section>
@@ -241,9 +278,9 @@
 		<div class="flex flex-col lg:flex-row gap-20">
 			<!-- Sticky Title -->
 			<div class="lg:w-1/3 lg:sticky lg:top-24 h-fit">
-				<h2 class="text-4xl font-medium mb-6">How it works.</h2>
+				<h2 class="text-4xl font-medium mb-6">Your learning journey.</h2>
 				<p class="text-gray-500 text-[15px] leading-relaxed max-w-xs">
-					With two lab tests a year, daily tracking from your phone and wearables, and guidance from real doctors, Holo helps you understand what's going on inside so you can make smarter, healthier choices.
+					From enrollment to certification, we guide you through every step. Our structured approach ensures you build skills progressively and gain the confidence to excel in your coffee career.
 				</p>
 			</div>
 
@@ -253,28 +290,22 @@
 				<div class="bg-white rounded-[32px] p-10 md:p-16 flex flex-col items-center text-center shadow-sm">
 					<div class="w-full max-w-md mb-10 text-left self-start">
 						<div class="w-8 h-8 rounded border border-gray-200 flex items-center justify-center text-xs font-medium mb-6">1</div>
-						<h3 class="text-2xl font-medium mb-3">Chose the plan that fits you better.</h3>
-						<p class="text-sm text-gray-500 leading-relaxed">Two options available. Set the Core plan with 60+ biomarkers to access the most advance lab test or choose the Starter plan to test 40+ essential biomarkers.</p>
+						<h3 class="text-2xl font-medium mb-3">Choose your course level.</h3>
+						<p class="text-sm text-gray-500 leading-relaxed">Select from Foundation, Intermediate, or Professional tracks based on your experience and goals. Each level builds comprehensive coffee knowledge.</p>
 					</div>
-					<div class="w-[240px] h-[480px] bg-black rounded-[36px] p-2 shadow-xl border-4 border-gray-100">
-						<div class="w-full h-full bg-white rounded-[28px] overflow-hidden relative flex flex-col">
-                            <!-- Mock UI -->
-                            <div class="bg-gray-50 p-4 border-b">
-                                <div class="h-4 w-20 bg-gray-200 rounded mb-2"></div>
+					<div class="w-[240px] h-[420px] bg-gradient-to-br from-primary-50 to-white rounded-[24px] p-6 shadow-xl">
+						<div class="space-y-3">
+                            <div class="bg-white rounded-xl p-4 shadow-sm border-2 border-primary-400">
+                                <div class="text-xs font-bold text-primary-700 mb-1">Foundation</div>
+                                <div class="text-[10px] text-gray-500">Perfect for beginners</div>
                             </div>
-                            <div class="p-4 space-y-3">
-                                <div class="h-12 bg-green-50 rounded-lg border border-green-100 p-2">
-                                    <div class="h-2 w-12 bg-green-200 rounded mb-1"></div>
-                                    <div class="h-4 w-24 bg-green-300 rounded"></div>
-                                </div>
-                                <div class="h-12 bg-white rounded-lg border border-gray-100 p-2">
-                                    <div class="h-2 w-12 bg-gray-200 rounded mb-1"></div>
-                                    <div class="h-4 w-24 bg-gray-300 rounded"></div>
-                                </div>
-                                <div class="h-12 bg-white rounded-lg border border-gray-100 p-2">
-                                    <div class="h-2 w-12 bg-gray-200 rounded mb-1"></div>
-                                    <div class="h-4 w-24 bg-gray-300 rounded"></div>
-                                </div>
+                            <div class="bg-white rounded-xl p-4 shadow-sm">
+                                <div class="text-xs font-bold text-gray-700 mb-1">Intermediate</div>
+                                <div class="text-[10px] text-gray-500">For experienced baristas</div>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 shadow-sm">
+                                <div class="text-xs font-bold text-gray-700 mb-1">Professional</div>
+                                <div class="text-[10px] text-gray-500">Competition ready</div>
                             </div>
                         </div>
 					</div>
@@ -284,16 +315,26 @@
 				<div class="bg-white rounded-[32px] p-10 md:p-16 flex flex-col items-center text-center shadow-sm">
 					<div class="w-full max-w-md mb-10 text-left self-start">
 						<div class="w-8 h-8 rounded border border-gray-200 flex items-center justify-center text-xs font-medium mb-6">2</div>
-						<h3 class="text-2xl font-medium mb-3">Schedule your appointment.</h3>
-						<p class="text-sm text-gray-500 leading-relaxed">Choose the most convenient lab location for you and follow the instructions before the test.</p>
+						<h3 class="text-2xl font-medium mb-3">Attend hands-on classes.</h3>
+						<p class="text-sm text-gray-500 leading-relaxed">Learn through practical experience with professional equipment. Small class sizes ensure personalized instruction and plenty of practice time.</p>
 					</div>
-					<div class="w-[240px] h-[480px] bg-black rounded-[36px] p-2 shadow-xl border-4 border-gray-100">
-                        <div class="w-full h-full bg-white rounded-[28px] overflow-hidden relative flex flex-col items-center pt-8">
-                            <div class="text-sm font-bold mb-4">Appointment</div>
-                            <div class="w-16 h-16 bg-gray-100 rounded-full mb-4"></div>
-                            <div class="text-xs text-gray-500 px-8 text-center">Schedule your visit at a nearby lab.</div>
-                            <div class="mt-auto w-full p-4">
-                                <div class="w-full h-10 bg-black rounded-lg"></div>
+					<div class="w-[240px] h-[420px] bg-gray-900 rounded-[24px] p-6 shadow-xl text-white">
+                        <div class="text-center mb-6">
+                            <div class="text-sm font-bold mb-2">Week 1-4</div>
+                            <div class="text-[10px] text-gray-400">Intensive Training</div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="bg-gray-800 rounded-lg p-3">
+                                <div class="text-xs font-medium mb-1">Espresso Basics</div>
+                                <div class="h-1 bg-primary-500 rounded w-full"></div>
+                            </div>
+                            <div class="bg-gray-800 rounded-lg p-3">
+                                <div class="text-xs font-medium mb-1">Milk Steaming</div>
+                                <div class="h-1 bg-primary-500 rounded w-3/4"></div>
+                            </div>
+                            <div class="bg-gray-800 rounded-lg p-3">
+                                <div class="text-xs font-medium mb-1">Latte Art</div>
+                                <div class="h-1 bg-gray-700 rounded w-1/2"></div>
                             </div>
                         </div>
 					</div>
@@ -303,22 +344,29 @@
 				<div class="bg-white rounded-[32px] p-10 md:p-16 flex flex-col items-center text-center shadow-sm">
 					<div class="w-full max-w-md mb-10 text-left self-start">
 						<div class="w-8 h-8 rounded border border-gray-200 flex items-center justify-center text-xs font-medium mb-6">3</div>
-						<h3 class="text-2xl font-medium mb-3">Receive first results.</h3>
-						<p class="text-sm text-gray-500 leading-relaxed">Within 24 hours directly on your app. When all your results are available, our medical team will start working on your Clinician Notes.</p>
+						<h3 class="text-2xl font-medium mb-3">Practice and refine skills.</h3>
+						<p class="text-sm text-gray-500 leading-relaxed">Get feedback from experienced instructors as you perfect your technique. Repeat modules until you're confident and consistent.</p>
 					</div>
-					<div class="w-[240px] h-[480px] bg-black rounded-[36px] p-2 shadow-xl border-4 border-gray-100">
-                        <div class="w-full h-full bg-gray-900 rounded-[28px] overflow-hidden relative text-white p-6 pt-10">
-                             <div class="flex items-center gap-3 mb-6">
-                                 <div class="w-10 h-10 rounded-full bg-gray-700"></div>
-                                 <div>
-                                     <div class="text-sm font-bold">Grace Parker</div>
-                                     <div class="text-[10px] text-gray-400">Bio Age: 28</div>
-                                 </div>
-                             </div>
-                             <div class="space-y-2">
-                                 <div class="h-20 bg-gray-800 rounded-xl"></div>
-                                 <div class="h-20 bg-gray-800 rounded-xl"></div>
-                             </div>
+					<div class="w-[240px] h-[420px] bg-white rounded-[24px] p-6 shadow-xl border border-gray-200">
+                        <div class="text-center mb-6">
+                            <div class="text-sm font-bold mb-2">Practice Sessions</div>
+                            <div class="text-[10px] text-gray-500">Unlimited until mastery</div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="border border-gray-200 rounded-lg p-3">
+                                <div class="flex justify-between items-center mb-2">
+                                    <div class="text-xs font-medium">Extraction</div>
+                                    <div class="text-[10px] text-green-600 font-bold">✓ Mastered</div>
+                                </div>
+                                <div class="text-[10px] text-gray-400">45 practice shots</div>
+                            </div>
+                            <div class="border-2 border-primary-300 rounded-lg p-3 bg-primary-50">
+                                <div class="flex justify-between items-center mb-2">
+                                    <div class="text-xs font-medium">Latte Art</div>
+                                    <div class="text-[10px] text-primary-600 font-bold">In Progress</div>
+                                </div>
+                                <div class="text-[10px] text-gray-500">28 practice pours</div>
+                            </div>
                         </div>
 					</div>
 				</div>
@@ -327,16 +375,31 @@
 				<div class="bg-white rounded-[32px] p-10 md:p-16 flex flex-col items-center text-center shadow-sm">
 					<div class="w-full max-w-md mb-10 text-left self-start">
 						<div class="w-8 h-8 rounded border border-gray-200 flex items-center justify-center text-xs font-medium mb-6">4</div>
-						<h3 class="text-2xl font-medium mb-3">Your Clinician Notes are ready.</h3>
-						<p class="text-sm text-gray-500 leading-relaxed">Receive your Clinician Notes and personalized Action Plan within 7 days from your results.</p>
+						<h3 class="text-2xl font-medium mb-3">Pass your certification exam.</h3>
+						<p class="text-sm text-gray-500 leading-relaxed">Demonstrate your skills in a practical assessment. Our completion guarantee means we support you until you succeed.</p>
 					</div>
-					<div class="w-[240px] h-[480px] bg-black rounded-[36px] p-2 shadow-xl border-4 border-gray-100">
-                        <div class="w-full h-full bg-white rounded-[28px] overflow-hidden relative flex flex-col pt-8 px-4">
-                            <div class="text-center text-sm font-bold mb-4">Clinician Notes</div>
-                            <div class="text-[10px] text-gray-500 leading-relaxed text-justify">
-                                You already make smart choices for your health through regular exercise, reduced unhealthy fats and sugars, and limiting sleep disruptors.
-                                <br><br>
-                                Since your diet lacks enough fruits and vegetables, adding more could strengthen long-term health...
+					<div class="w-[240px] h-[420px] bg-gradient-to-br from-green-50 to-white rounded-[24px] p-6 shadow-xl border-2 border-green-200">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div class="text-sm font-bold mb-1">Certification Exam</div>
+                            <div class="text-[10px] text-gray-500">Practical Assessment</div>
+                        </div>
+                        <div class="space-y-2 text-left">
+                            <div class="text-[10px] text-gray-600 flex items-center gap-2">
+                                <span class="text-green-500">✓</span> Espresso extraction
+                            </div>
+                            <div class="text-[10px] text-gray-600 flex items-center gap-2">
+                                <span class="text-green-500">✓</span> Milk texturing
+                            </div>
+                            <div class="text-[10px] text-gray-600 flex items-center gap-2">
+                                <span class="text-green-500">✓</span> Drink preparation
+                            </div>
+                            <div class="text-[10px] text-gray-600 flex items-center gap-2">
+                                <span class="text-green-500">✓</span> Theory knowledge
                             </div>
                         </div>
 					</div>
@@ -346,17 +409,24 @@
 				<div class="bg-white rounded-[32px] p-10 md:p-16 flex flex-col items-center text-center shadow-sm">
 					<div class="w-full max-w-md mb-10 text-left self-start">
 						<div class="w-8 h-8 rounded border border-gray-200 flex items-center justify-center text-xs font-medium mb-6">5</div>
-						<h3 class="text-2xl font-medium mb-3">Start improving.</h3>
-						<p class="text-sm text-gray-500 leading-relaxed">Continue your health journey together with Holo AI and your Action Plan. Recheck in 6 months with the follow-up test.</p>
+						<h3 class="text-2xl font-medium mb-3">Launch your coffee career.</h3>
+						<p class="text-sm text-gray-500 leading-relaxed">Join our alumni network and access ongoing support. Advance to higher levels or compete professionally with your new skills.</p>
 					</div>
-					<div class="w-[240px] h-[480px] bg-black rounded-[36px] p-2 shadow-xl border-4 border-gray-100">
-                        <div class="w-full h-full bg-white rounded-[28px] overflow-hidden relative flex flex-col pt-8 px-4">
-                             <div class="bg-gray-100 p-3 rounded-lg text-[10px] mb-2">
-                                 What benefit do I get by keeping ApoB down in the optimal range?
-                             </div>
-                             <div class="text-[10px] text-gray-500 leading-relaxed mt-2">
-                                 By lowering ApoB, you've reduced the number of cholesterol-carrying particles in your bloodstream...
-                             </div>
+					<div class="w-[240px] h-[420px] bg-gradient-to-br from-primary-500 to-primary-700 rounded-[24px] p-6 shadow-xl text-white">
+                        <div class="text-center mb-6">
+                            <div class="text-sm font-bold mb-2">SCA Certified</div>
+                            <div class="text-[10px] text-primary-100">Barista Foundation Level</div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur rounded-xl p-4 mb-4">
+                            <div class="text-xs font-medium mb-2">Next Steps</div>
+                            <div class="space-y-2">
+                                <div class="text-[10px] text-primary-100">→ Intermediate Course</div>
+                                <div class="text-[10px] text-primary-100">→ Competition Training</div>
+                                <div class="text-[10px] text-primary-100">→ Alumni Workshops</div>
+                            </div>
+                        </div>
+                        <div class="text-[10px] text-primary-100 text-center">
+                            Join 500+ certified baristas
                         </div>
 					</div>
 				</div>
@@ -370,15 +440,14 @@
 			<!-- Left Card -->
 			<div class="bg-[#111] rounded-[32px] p-10 md:p-12 text-white min-h-[400px] flex flex-col relative overflow-hidden">
 				<div class="relative z-10">
-					<div class="text-xs text-gray-400 mb-2">A five star experience.</div>
-					<h3 class="text-2xl font-medium max-w-xs">We partner exclusively with renowned labs.</h3>
+					<div class="text-xs text-gray-400 mb-2">SCA-Aligned Standards</div>
+					<h3 class="text-2xl font-medium max-w-xs">Training recognized by the global coffee industry.</h3>
 				</div>
-				<!-- Map Graphic Placeholder -->
-				<div class="absolute bottom-0 right-0 w-full h-64 opacity-20">
-                    <!-- Simple dot map simulation with SVG -->
+				<!-- Coffee beans pattern -->
+				<div class="absolute bottom-0 right-0 w-full h-64 opacity-10">
                     <svg viewBox="0 0 200 100" class="w-full h-full">
-                        {#each Array(100) as _, i}
-                            <circle cx={Math.random() * 200} cy={Math.random() * 100} r="1" fill="white" />
+                        {#each Array(50) as _, i}
+                            <ellipse cx={Math.random() * 200} cy={Math.random() * 100} rx="3" ry="4" fill="white" transform={`rotate(${Math.random() * 360} ${Math.random() * 200} ${Math.random() * 100})`} />
                         {/each}
                     </svg>
 				</div>
@@ -386,15 +455,14 @@
 			<!-- Right Card -->
 			<div class="bg-[#111] rounded-[32px] p-10 md:p-12 text-white min-h-[400px] flex flex-col relative overflow-hidden">
 				<div class="relative z-10">
-					<div class="text-xs text-gray-400 mb-2">Your data is safe with us.</div>
-					<h3 class="text-2xl font-medium max-w-xs">We're built to protect your privacy by default.</h3>
+					<div class="text-xs text-gray-400 mb-2">Expert Instructors</div>
+					<h3 class="text-2xl font-medium max-w-xs">Learn from competition winners and industry veterans.</h3>
 				</div>
-				<!-- Blurred Text Graphic -->
-				<div class="absolute bottom-8 right-8 text-right font-mono text-3xl opacity-30 blur-[2px] select-none pointer-events-none">
-					<div>Elizab|%b$9yT</div>
-					<div>Willi|I7m/@</div>
-					<div>Magn|&5a!</div>
-					<div>Trigly|?Pm_Lw</div>
+				<!-- Trophy/Award icons -->
+				<div class="absolute bottom-8 right-8 flex gap-4 opacity-20">
+					<div class="text-6xl">🏆</div>
+					<div class="text-6xl">⭐</div>
+					<div class="text-6xl">🥇</div>
 				</div>
 			</div>
 		</div>
@@ -402,71 +470,85 @@
 
 	<!-- Pricing Section -->
 	<section class="py-24 px-6 md:px-12 max-w-[1400px] mx-auto w-full text-center">
-		<h2 class="text-3xl md:text-4xl font-medium mb-4">Preventive healthcare for everyone.</h2>
+		<h2 class="text-3xl md:text-4xl font-medium mb-4">Professional training at every level.</h2>
 		<p class="text-gray-500 text-sm max-w-lg mx-auto mb-16">
-			Top-tier testing, real-time tracking, and dedicated clinician guidance—made affordable. Because investing in prevention is the most important investing of your life.
+			From beginner to competition-ready, our courses provide the skills and certification you need to succeed in the specialty coffee industry.
 		</p>
 
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-			<!-- Starter Plan -->
+			<!-- Foundation Plan -->
 			<div class="bg-white rounded-[32px] p-8 text-left flex flex-col shadow-sm">
-				<div class="w-10 h-10 bg-gray-100 rounded-lg mb-6"></div>
-				<h3 class="text-xl font-bold mb-1">Starter</h3>
-				<p class="text-xs text-gray-500 mb-6">Begin your health journey.</p>
+				<div class="w-10 h-10 bg-primary-100 rounded-lg mb-6 flex items-center justify-center">
+					<div class="w-5 h-5 text-primary-600">
+						<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/></svg>
+					</div>
+				</div>
+				<h3 class="text-xl font-bold mb-1">Foundation</h3>
+				<p class="text-xs text-gray-500 mb-6">Perfect for beginners and home brewers.</p>
 				
 				<div class="flex items-baseline gap-1 mb-1">
-					<span class="text-2xl font-bold">€199</span>
-					<span class="text-xs text-gray-500">/yr</span>
+					<span class="text-2xl font-bold">฿12,900</span>
 				</div>
-				<div class="text-[10px] text-gray-400 mb-8">Pay in installments with Klarna. <span class="bg-pink-100 text-pink-600 px-1 rounded">Klarna.</span></div>
+				<div class="text-[10px] text-gray-400 mb-8">4-week intensive course</div>
 
 				<ul class="space-y-4 mb-8 flex-1">
 					<li class="flex gap-3 text-xs text-gray-600">
-						<span class="text-green-500 shrink-0">{@html Check}</span>
-						Two tests a year covering 40+ essential biomarkers.
+						<span class="text-primary-500 shrink-0">{@html Check}</span>
+						Coffee fundamentals and origin knowledge
 					</li>
 					<li class="flex gap-3 text-xs text-gray-600">
-						<span class="text-green-500 shrink-0">{@html Check}</span>
-						Measure your Biological Age and Aging Rate with every test.
+						<span class="text-primary-500 shrink-0">{@html Check}</span>
+						Espresso extraction and milk techniques
 					</li>
 					<li class="flex gap-3 text-xs text-gray-600">
-						<span class="text-green-500 shrink-0">{@html Check}</span>
-						Clinician Notes and personalized Action Plan to guide your health.
+						<span class="text-primary-500 shrink-0">{@html Check}</span>
+						SCA Foundation certification exam included
+					</li>
+					<li class="flex gap-3 text-xs text-gray-600">
+						<span class="text-primary-500 shrink-0">{@html Check}</span>
+						Completion guarantee with unlimited practice
 					</li>
 				</ul>
 
-				<button class="w-full bg-black text-white py-3 rounded-lg text-xs font-bold hover:bg-gray-800 transition-colors">Join now</button>
+				<button class="w-full bg-black text-white py-3 rounded-lg text-xs font-bold hover:bg-gray-800 transition-colors">Enroll now</button>
 			</div>
 
-			<!-- Core Plan -->
-			<div class="bg-white rounded-[32px] p-8 text-left flex flex-col shadow-sm border-2 border-orange-100 relative overflow-hidden">
-                <div class="absolute top-0 right-0 bg-orange-100 text-orange-600 text-[10px] font-bold px-3 py-1 rounded-bl-xl">POPULAR</div>
-				<div class="w-10 h-10 bg-orange-50 rounded-lg mb-6"></div>
-				<h3 class="text-xl font-bold mb-1">Core</h3>
-				<p class="text-xs text-gray-500 mb-6">The most advanced longevity membership.</p>
+			<!-- Professional Plan -->
+			<div class="bg-white rounded-[32px] p-8 text-left flex flex-col shadow-sm border-2 border-primary-200 relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-primary-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl">MOST POPULAR</div>
+				<div class="w-10 h-10 bg-primary-500 rounded-lg mb-6 flex items-center justify-center">
+					<div class="w-5 h-5 text-white">
+						<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+					</div>
+				</div>
+				<h3 class="text-xl font-bold mb-1">Professional</h3>
+				<p class="text-xs text-gray-500 mb-6">Competition preparation and mastery.</p>
 				
 				<div class="flex items-baseline gap-1 mb-1">
-					<span class="text-2xl font-bold">€399</span>
-					<span class="text-xs text-gray-500">/yr</span>
+					<span class="text-2xl font-bold">฿28,900</span>
 				</div>
-				<div class="text-[10px] text-gray-400 mb-8">Pay in installments with Klarna. <span class="bg-pink-100 text-pink-600 px-1 rounded">Klarna.</span></div>
+				<div class="text-[10px] text-gray-400 mb-8">8-week advanced program</div>
 
 				<ul class="space-y-4 mb-8 flex-1">
 					<li class="flex gap-3 text-xs text-gray-600">
-						<span class="text-green-500 shrink-0">{@html Check}</span>
-						Full Core Test of 60+ Biomarkers plus a follow-up with 40+ biomarkers to track change.
+						<span class="text-primary-500 shrink-0">{@html Check}</span>
+						Advanced brewing methods and sensory training
 					</li>
 					<li class="flex gap-3 text-xs text-gray-600">
-						<span class="text-green-500 shrink-0">{@html Check}</span>
-						First test includes an extended hormonal and Vitamin panel for deeper insights.
+						<span class="text-primary-500 shrink-0">{@html Check}</span>
+						Competition techniques and performance coaching
 					</li>
 					<li class="flex gap-3 text-xs text-gray-600">
-						<span class="text-green-500 shrink-0">{@html Check}</span>
-						Clinician Notes and a personalized Action Plan built on your most complete lab testing profile.
+						<span class="text-primary-500 shrink-0">{@html Check}</span>
+						SCA Professional certification exam included
+					</li>
+					<li class="flex gap-3 text-xs text-gray-600">
+						<span class="text-primary-500 shrink-0">{@html Check}</span>
+						One-on-one mentorship with competition winners
 					</li>
 				</ul>
 
-				<button class="w-full bg-black text-white py-3 rounded-lg text-xs font-bold hover:bg-gray-800 transition-colors">Join now</button>
+				<button class="w-full bg-black text-white py-3 rounded-lg text-xs font-bold hover:bg-gray-800 transition-colors">Enroll now</button>
 			</div>
 		</div>
 	</section>
@@ -484,8 +566,18 @@
 					<span class="text-gray-400 transition-transform duration-200 {faq.open ? 'rotate-45' : ''}">{@html Plus}</span>
 				</button>
                 {#if faq.open}
-                    <div class="px-4 pb-4 text-xs text-gray-500">
-                        Placeholder answer for "{faq.question}". This would contain detailed information about the service.
+                    <div class="px-4 pb-4 text-xs text-gray-500 leading-relaxed">
+                        {#if i === 0}
+                            SCA (Specialty Coffee Association) certification is the global standard for coffee professionals. It demonstrates your skills meet international quality standards and is recognized by specialty coffee shops worldwide.
+                        {:else if i === 1}
+                            No prior experience is required for our Foundation course. We welcome complete beginners, home brewers, and anyone passionate about learning coffee. Our instructors adapt to your skill level.
+                        {:else if i === 2}
+                            Foundation courses run 4 weeks with classes 3 times per week. Professional courses are 8 weeks. We also offer intensive weekend formats for those with limited availability.
+                        {:else if i === 3}
+                            Our Professional course includes competition preparation and coaching. Many of our graduates have competed successfully in regional and national competitions, with some advancing to international events.
+                        {:else if i === 4}
+                            All equipment is provided during training. You'll work with professional espresso machines, grinders, and brewing tools. We'll recommend equipment if you want to practice at home.
+                        {/if}
                     </div>
                 {/if}
 			{/each}
@@ -501,33 +593,67 @@
 	<footer class="bg-[#F5F5F3] py-16 px-6 md:px-12 text-[11px] text-gray-500">
 		<div class="max-w-[1400px] mx-auto">
 			<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-8">
-				<div class="flex items-center gap-2">
-					<div class="grid grid-cols-2 gap-[2px]">
-						<div class="w-1 h-1 bg-black rounded-full"></div>
-						<div class="w-1 h-1 bg-black rounded-full"></div>
-						<div class="w-1 h-1 bg-black rounded-full"></div>
-						<div class="w-1 h-1 bg-black rounded-full"></div>
+				<div class="flex items-center gap-3">
+					<div class="w-8 h-8 text-primary-600">
+						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<mask
+								id="mask0_161_7365"
+								style="mask-type:luminance"
+								maskUnits="userSpaceOnUse"
+								x="3"
+								y="1"
+								width="18"
+								height="22"
+							>
+								<path d="M3 1H20.7794V22.3353H3V1Z" fill="white" />
+							</mask>
+							<g mask="url(#mask0_161_7365)">
+								<path
+									d="M14.1516 3.24638L12.4034 2.77795L10.9302 8.27606L9.60014 3.31233L7.85194 3.78076L9.28896 9.14369L5.70969 5.56443L4.42993 6.84419L8.35594 10.7702L3.46671 9.46017L2.99829 11.2083L8.34038 12.6397C8.27922 12.3759 8.24687 12.1011 8.24687 11.8187C8.24687 9.81953 9.86746 8.19894 11.8666 8.19894C13.8657 8.19894 15.4863 9.81953 15.4863 11.8187C15.4863 12.0993 15.4544 12.3724 15.394 12.6347L20.2489 13.9356L20.7173 12.1874L15.354 10.7503L20.2436 9.44012L19.7751 7.69196L14.412 9.12898L17.9913 5.54972L16.7115 4.26998L12.84 8.14156L14.1516 3.24638Z"
+									fill="currentColor"
+								/>
+								<path
+									d="M15.3888 12.655C15.2389 13.2887 14.9225 13.8579 14.4883 14.314L18.0056 17.8313L19.2853 16.5515L15.3888 12.655Z"
+									fill="currentColor"
+								/>
+								<path
+									d="M14.4529 14.3508C14.0135 14.7996 13.4582 15.1345 12.8354 15.3071L14.1153 20.0836L15.8635 19.6151L14.4529 14.3508Z"
+									fill="currentColor"
+								/>
+								<path
+									d="M12.7701 15.3246C12.4812 15.3989 12.1784 15.4384 11.8663 15.4384C11.5319 15.4384 11.2082 15.393 10.9008 15.3082L9.61981 20.089L11.368 20.5574L12.7701 15.3246Z"
+									fill="currentColor"
+								/>
+								<path
+									d="M10.839 15.2905C10.2258 15.1093 9.68038 14.7702 9.24994 14.3201L5.72406 17.8459L7.00382 19.1257L10.839 15.2905Z"
+									fill="currentColor"
+								/>
+								<path
+									d="M9.22084 14.2889C8.79778 13.836 8.48962 13.2743 8.34294 12.6505L3.47211 13.9556L3.94053 15.7038L9.22084 14.2889Z"
+									fill="currentColor"
+								/>
+							</g>
+						</svg>
 					</div>
-					<span class="text-lg font-bold tracking-tight text-black">HOLO</span>
+					<span class="text-lg font-bold tracking-tight text-black">Coffee Academy</span>
 				</div>
 				<div class="flex flex-wrap gap-6 font-medium text-gray-600">
-					<a href="#" class="hover:text-black">Biomarkers</a>
+					<a href="#" class="hover:text-black">Courses</a>
+					<a href="#" class="hover:text-black">About</a>
 					<a href="#" class="hover:text-black">FAQ</a>
-					<a href="#" class="hover:text-black">Blog</a>
+					<a href="#" class="hover:text-black">Contact</a>
 					<a href="#" class="hover:text-black">Terms & Conditions</a>
-					<a href="#" class="hover:text-black">Privacy Policy</a>
 				</div>
 				<div class="flex gap-4">
-					<a href="#" class="text-black hover:text-gray-600">{@html XIcon}</a>
 					<a href="#" class="text-black hover:text-gray-600">{@html Instagram}</a>
 					<a href="#" class="text-black hover:text-gray-600">{@html Linkedin}</a>
 				</div>
 			</div>
 			
 			<div class="space-y-4 leading-relaxed opacity-60">
-				<p>Holo is a technology company, not a laboratory or medical provider. All lab and medical services are provided by independent third parties, who set their own pricing, terms and conditions. Access to certain providers, if does not recommend or refer healthcare providers. Holo does not offer medical advice, lab services, diagnosis, treatment, or medical opinions. Its services do not replace medical care or consultations with a licensed provider. If you have questions about lab results, consult a primary care physician or other licensed provider. All information provided by Holo is for general informational purposes only.</p>
-				<p>Holo's membership pricing includes prepaid access to certain third-party lab services. Some items and services require additional payments beyond standard membership pricing. For more details, see our Terms & Conditions.</p>
-				<p>By providing your phone number, you agree to receive text messages from Holo. Message and data rates may apply. Message frequency varies.</p>
+				<p>Coffee Academy is an independent training institution providing SCA-aligned barista certification courses. Our programs are designed to meet Specialty Coffee Association standards and prepare students for professional careers in the coffee industry.</p>
+				<p>Course completion does not guarantee employment, but our certified graduates have a strong track record of success in specialty coffee shops and competitions. Individual results may vary based on dedication and practice.</p>
+				<p>All course fees include materials, equipment use during training, and certification exam fees. Additional practice sessions and retakes are available at no extra cost under our completion guarantee.</p>
 			</div>
 		</div>
 	</footer>
